@@ -37,7 +37,7 @@ module "nlb" {
   source = "../modules/vault-lb"
 
   name     = var.lb_name
-  internal = true
+  internal = false
   load_balancer_type = var.lb_type
 
   vpc_id  = data.aws_vpc.default.id
