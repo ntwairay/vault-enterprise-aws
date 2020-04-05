@@ -1,3 +1,8 @@
 ami_id = "ami-0a80553b5adac5208"
 ssh_key_name = "ray-test-key"
 auto_unseal_kms_key_alias = "govtech-vault-auto-unseal"
+route53_zone ="servian-sg.gradeous.io"
+lb_name = "servian-vault-nlb"
+lb_type = "network"
+acm_domain="vault.servian-sg.gradeous.io"
+environment="servian-vault"

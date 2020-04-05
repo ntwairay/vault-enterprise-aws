@@ -85,3 +85,38 @@ variable "vpc_id" {
   type        = string
   default     = null
 }
+
+variable "subnet_ids" {
+  type    = list(string)
+  default = []
+}
+
+variable "lb_name" {
+  type    = string
+  default = null
+}
+
+variable "lb_type" {
+  type    = string
+  default = "network"
+}
+
+variable "acm_domain" {
+  type    = string
+  default = null
+}
+
+variable "environment" {
+  type    = string
+  default = ""
+}
+
+variable "subnet_mapping" {
+  description = "A list of subnet mapping blocks describing subnets to attach to network load balancer"
+  type        = list(map(string))
+  default     = []
+}
+
+variable "route53_zone" {
+  default = ""
+}
